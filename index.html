@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#181416">
+  <meta name="description" content="Together, Soon is an Android trip planner and countdown widget that helps people traveling alone or together keep a partner informed. Currently in closed development.">
+  <title>Together, Soon — A little closer, every day</title>
+  <link rel="icon" href="assets/heart.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top"><img src="assets/heart.svg" width="25" height="25" alt="">Together, Soon</a>
+    <nav aria-label="Main navigation">
+      <a href="#how-it-works">How it works</a>
+      <a href="#flight-data">Flight data</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="intro">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Android app in closed development</p>
+        <h1 id="intro">Far apart.<br><em>Together, soon.</em></h1>
+        <p class="lede">A shared trip timeline and a home screen countdown for the people waiting for each other.</p>
+        <p>Plan the flight, the connection, and the moment you meet. Whether you’re traveling solo or taking the trip together, you can share the milestones that matter and see when a delay changes the plan.</p>
+        <a class="button" href="#how-it-works">Explore the app</a>
+      </div>
+      <figure class="hero-screen">
+        <img src="assets/widget.webp" width="540" height="1200" alt="Together, Soon on an Android home screen. Pink numbers count down to boarding in hours, minutes, and seconds above a personalized caption and two hearts." fetchpriority="high">
+        <figcaption>Home screen widget · Sample itinerary</figcaption>
+      </figure>
+    </section>
+
+    <section id="how-it-works" class="section journey" aria-labelledby="journey-title">
+      <div class="section-intro">
+        <p class="eyebrow">How it works</p>
+        <h2 id="journey-title">A shared view of the journey.</h2>
+        <p class="lede">Give each other enough context to follow the trip, from getting to the airport to arriving at the meeting point.</p>
+      </div>
+      <div class="journey-grid">
+        <figure class="app-screen">
+          <img src="assets/trips.webp" width="540" height="1200" alt="The Trips screen shows the next Amsterdam departure, a countdown, its local time, and a compact Amsterdam to Singapore route." loading="lazy">
+          <figcaption>Trip summary · Sample itinerary</figcaption>
+        </figure>
+        <dl class="milestones">
+          <div>
+            <dt>Plan the moments that matter</dt>
+            <dd>Build a timeline for flights, trains, buses, or a meeting at arrivals. Each moment displays its own local time, so the traveler and the person waiting can read the same itinerary without doing time zone math.</dd>
+          </div>
+          <div>
+            <dt>Share with people you choose</dt>
+            <dd>Use a private circle to share selected moments. The traveler can count down to boarding while their partner counts down to arrival. Each widget can have its own caption, symbol, and visible moments.</dd>
+          </div>
+          <div>
+            <dt>Take the plan offline</dt>
+            <dd>Saved trips and countdowns stay available without a connection. Sharing and flight updates sync when a connection is available.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="flight-data" class="section flight-data" aria-labelledby="flight-title">
+      <div class="section-intro">
+        <p class="eyebrow">Flight data use case</p>
+        <h2 id="flight-title">When a flight changes, the countdown should too.</h2>
+        <p class="lede">We’re evaluating the AirLabs Flight Information API to keep shared estimates current for flights already on a user’s itinerary.</p>
+      </div>
+      <dl class="data-grid">
+        <div>
+          <dt>What we’d request</dt>
+          <dd>Our server would look up an itinerary flight by its flight number. We would use its reported status and departure or arrival estimate to show delays and adjust the relevant countdown.</dd>
+        </div>
+        <div>
+          <dt>How we’d show it</dt>
+          <dd>Travelers and their invited partners would see the saved schedule and the latest available estimate in their shared trip. A flight number follows the itinerary, and a person’s device location stays outside this lookup.</dd>
+        </div>
+      </dl>
+      <a class="text-link" href="https://airlabs.co/docs/flight">AirLabs Flight Information API</a>
+    </section>
+
+    <section class="closed" aria-labelledby="development-title">
+      <h2 id="development-title">Currently in closed development.</h2>
+      <p>Together, Soon is being tested privately on Android. The screenshots show a sample trip. Flight estimates depend on data availability, and travel decisions should be confirmed with the airline.</p>
+    </section>
+  </main>
+
+  <footer><span>Together, Soon</span><a href="#top">Back to top</a></footer>
+</body>
+</html>
